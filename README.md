@@ -71,17 +71,7 @@ Bootstrap: For responsive and styled components.
 JavaScript: For logic and interactivity.
 
 ## Folder Structure
-TextUtils/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── About.js
-│   │   ├── Alert.js
-│   │   ├── Navbar.js
-│   │   └── TextForm.js
-│   ├── App.js
-│   ├── index.js
-│   └── App.css
+![image alt](https://github.com/MohanRao58/TextUtils/blob/ce04070bc2b4de6e7b2833c388d5b579e5a850ac/FolderStructure.PNG)
 
 ## Screenshots
 Light Mode
