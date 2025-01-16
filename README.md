@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# TextUtils Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TextUtils is a React-based application designed to help users manipulate and analyze text with ease. It includes features like text transformation, text analysis, and dark mode support. This project leverages React functional components, hooks, and Bootstrap for a responsive and dynamic user experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+- **Convert Text to Uppercase or Lowercase**: Quickly transform your text.
+- **Text Analysis**: View word and character counts along with reading time.
+- **Remove Extra Spaces**: Clean up unnecessary spaces in your text.
+- **Copy Text**: Copy text directly to your clipboard with a single click.
+- **Dark Mode Support**: Toggle between light and dark themes for a better user experience.
+- **Dynamic Alert System**: Get feedback on your actions via alerts.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Components
+### **Navbar**
+- A responsive navigation bar with a dark mode toggle.
+- Props:
+  - `mode`: Specifies the current theme (`light` or `dark`).
+  - `title`: Customizable title for the app.
+  - `aboutText`: Customizable About section text.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **TextForm**
+- Main text manipulation tool with the following features:
+  - Convert text to uppercase or lowercase.
+  - Clear all text.
+  - Remove extra spaces.
+  - Copy text to clipboard.
+- Props:
+  - `heading`: The title for the TextForm component.
+  - `mode`: Specifies the current theme (`light` or `dark`).
+  - `showAlert`: Displays alerts for user actions.
 
-### `npm test`
+### **Alert**
+- Displays notifications for user actions.
+- Props:
+  - `alert`: Object containing the alert type (`success` or `error`) and message.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **About**
+- An accordion-style component explaining the app.
+- Toggle between light and dark modes for the section.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/TextUtils.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
+cd TextUtils
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
+npm install
 
-### `npm run eject`
+4. Start the development server:
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
+1. Use the navigation bar to switch between the "Home" and "About" sections.
+2. Enter your text in the textarea on the homepage.
+3. Utilize the buttons to manipulate your text.
+4. Toggle dark mode using the switch in the navbar.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used
+React: Component-based library for building the user interface.
+React Router: For navigation between components.
+Bootstrap: For responsive and styled components.
+JavaScript: For logic and interactivity.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Folder Structure
+TextUtils/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── About.js
+│   │   ├── Alert.js
+│   │   ├── Navbar.js
+│   │   └── TextForm.js
+│   ├── App.js
+│   ├── index.js
+│   └── App.css
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
+Light Mode
+![image alt](https://github.com/MohanRao58/TextUtils/blob/dbd0ea714b319d857384789c01642a6728ce0ed4/lightmode.PNG)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Dark Mode
+![image alt](https://github.com/MohanRao58/TextUtils/blob/dbd0ea714b319d857384789c01642a6728ce0ed4/darkmode.PNG)
