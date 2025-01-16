@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/editor-app/static/css/main.31d6cfe0.css",
+    "main.js": "/editor-app/static/js/main.60bbe504.js",
+    "static/js/787.fb9a5fa6.chunk.js": "/editor-app/static/js/787.fb9a5fa6.chunk.js",
+    "index.html": "/editor-app/index.html",
+    "main.60bbe504.js.map": "/editor-app/static/js/main.60bbe504.js.map",
+    "787.fb9a5fa6.chunk.js.map": "/editor-app/static/js/787.fb9a5fa6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.60bbe504.js"
+  ]
+}
